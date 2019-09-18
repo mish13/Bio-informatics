@@ -10,7 +10,7 @@ def Count(s,x):
     i+=1
   return cnt
   
-  given = input()
+given = input()
 match = input()
 
 print(Count(given,match))
