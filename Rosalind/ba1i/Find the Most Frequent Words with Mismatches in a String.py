@@ -10,7 +10,7 @@ def hamming_distance(a,b):
       cnt=cnt+1
   return cnt
 
-def count_occurance(a,b,d):
+def count_occurance_with_mismatch(a,b,d):
   length_a = len(a)
   length_b = len(b)
 
@@ -34,7 +34,7 @@ def all_possible_genome_sequence(k,pos,lst,pattern,d,answer):
     for x in lst:
       s+=x
     tmp.neucleotide = s
-    tmp.occurance = count_occurance(s,pattern,d)
+    tmp.occurance = count_occurance_with_mismatch(s,pattern,d)
     answer.append(tmp)
     return
   for i in range (4):
